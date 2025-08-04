@@ -13,7 +13,7 @@ function CreateSeller() {
 
     const handleCreate = async () => {
         const sellerId = localStorage.getItem("sellerId");
-        const res = await fetch("http://daily-drop-backend.onrender.com/seller/register-detail", {
+        const res = await fetch("https://daily-drop-backend.onrender.com/seller/register-detail", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

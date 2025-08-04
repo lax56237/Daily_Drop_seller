@@ -5,7 +5,7 @@ const Orders = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch('http://daily-drop-backend.onrender.com/seller/get-orders', {
+        fetch('https://daily-drop-backend.onrender.com/seller/get-orders', {
             credentials: 'include'
         })
             .then(res => res.json())

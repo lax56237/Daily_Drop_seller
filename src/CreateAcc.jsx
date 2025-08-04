@@ -15,7 +15,7 @@ function CreateAcc() {
                 <br />
 
                 <button type="button" onClick={async () => {
-                    const res = await fetch("http://daily-drop-backend.onrender.com/seller/register", {
+                    const res = await fetch("https://daily-drop-backend.onrender.com/seller/register", {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         credentials: "include",

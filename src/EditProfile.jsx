@@ -15,7 +15,7 @@ function EditProfile() {
 
     useEffect(() => {
 
-        fetch("http://daily-drop-backend.onrender.com/seller/details", {
+        fetch("https://daily-drop-backend.onrender.com/seller/details", {
             method: "GET",
             credentials: "include"
         })
@@ -42,7 +42,7 @@ function EditProfile() {
             }
         }
 
-        const res = await fetch("http://daily-drop-backend.onrender.com/seller/update-detail", {
+        const res = await fetch("https://daily-drop-backend.onrender.com/seller/update-detail", {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             credentials: "include",

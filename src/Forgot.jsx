@@ -9,7 +9,7 @@ function Forgot() {
     const navigate = useNavigate();
 
     const handleSubmit = () => {
-        fetch("http://daily-drop-backend.onrender.com/otp/method", {
+        fetch("https://daily-drop-backend.onrender.com/otp/method", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

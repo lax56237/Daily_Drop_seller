@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import './Verification.css';
 
 const Verification = () => {
     const [phone, setPhone] = useState('');
@@ -8,7 +7,7 @@ const Verification = () => {
     const navigate = useNavigate();
 
     const handleVerify = async () => {
-        const res = await fetch('http://daily-drop-backend.onrender.com/seller/verify-delivery', {
+        const res = await fetch('https://daily-drop-backend.onrender.com/seller/verify-delivery', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ phone })
