@@ -8,7 +8,7 @@ const Verification = () => {
     const navigate = useNavigate();
 
     const handleVerify = async () => {
-        const res = await fetch('http://localhost:5000/seller/verify-delivery', {
+        const res = await fetch('http://daily-drop-backend.onrender.com/seller/verify-delivery', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ phone })

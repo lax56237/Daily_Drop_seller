@@ -15,7 +15,7 @@ function EditProfile() {
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/seller/details", {
+        fetch("http://daily-drop-backend.onrender.com/seller/details", {
             method: "GET",
             credentials: "include"
         })
@@ -35,7 +35,6 @@ function EditProfile() {
     }, [navigate]);
 
     const handleSubmit = async () => {
-        // Check ourempty fields
         for (let key in details) {
             if (!details[key]) {
                 alert(`${key} cannot be empty`);
@@ -43,7 +42,7 @@ function EditProfile() {
             }
         }
 
-        const res = await fetch("http://localhost:5000/seller/update-detail", {
+        const res = await fetch("http://daily-drop-backend.onrender.com/seller/update-detail", {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             credentials: "include",
