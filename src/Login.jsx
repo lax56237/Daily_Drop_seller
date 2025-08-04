@@ -36,7 +36,7 @@ function Login() {
         }
         setError('');
 
-        fetch("https://daily-drop-backend.onrender.com/auth/login", {
+        fetch("https://dailydropbackend-production.up.railway.app/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

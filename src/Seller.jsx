@@ -7,7 +7,7 @@ function Seller() {
     const [details, setDetails] = useState(null);
 
     useEffect(() => {
-        fetch("https://daily-drop-backend.onrender.com/seller/details", {
+        fetch("https://dailydropbackend-production.up.railway.app/seller/details", {
             method: "GET",
             credentials: "include"
         })

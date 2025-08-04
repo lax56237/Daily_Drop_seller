@@ -15,14 +15,14 @@ function Products() {
     });
 
     useEffect(() => {
-        fetch("https://daily-drop-backend.onrender.com/products/mine", { credentials: 'include' })
+        fetch("https://dailydropbackend-production.up.railway.app/products/mine", { credentials: 'include' })
             .then(res => res.json())
             .then(data => setProducts(data))
             .catch(() => setProducts([]));
     }, []);
 
     const handleAdd = async () => {
-        await fetch("https://daily-drop-backend.onrender.com/products/add", {
+        await fetch("https://dailydropbackend-production.up.railway.app/products/add", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             credentials: "include",
@@ -40,7 +40,7 @@ function Products() {
             imageUrl: ''
         });
 
-        const res = await fetch("https://daily-drop-backend.onrender.com/products/mine", { credentials: 'include' });
+        const res = await fetch("https://dailydropbackend-production.up.railway.app/products/mine", { credentials: 'include' });
         const data = await res.json();
         setProducts(data);
     };

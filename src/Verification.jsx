@@ -7,7 +7,7 @@ const Verification = () => {
     const navigate = useNavigate();
 
     const handleVerify = async () => {
-        const res = await fetch('https://daily-drop-backend.onrender.com/seller/verify-delivery', {
+        const res = await fetch('https://dailydropbackend-production.up.railway.app/seller/verify-delivery', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ phone })
