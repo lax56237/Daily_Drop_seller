@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import './changepass.css';
+import './Changepass.css';
 
 function ChangePass() {
     const navigate = useNavigate();
