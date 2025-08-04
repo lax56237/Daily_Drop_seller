@@ -1,0 +1,30 @@
+.seller-dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.top-bar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.shop-info h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.product-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
